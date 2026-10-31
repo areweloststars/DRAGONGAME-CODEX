@@ -1,0 +1,13 @@
+{
+  "name": "word-photo-game",
+  "private": true,
+  "description": "그림 스토리 단어 미션: 단어장 사진으로 이야기·그림·퀴즈를 만드는 정적 웹 게임 (word-game/)",
+  "scripts": {
+    "build": "node app/build.cjs",
+    "check": "node app/build.cjs --check",
+    "test": "node app/build.cjs --check && node --test \"app/tests/*.test.cjs\""
+  },
+  "devDependencies": {
+    "jsdom": "^26.1.0"
+  }
+}

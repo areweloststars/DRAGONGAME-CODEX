@@ -1,0 +1,12 @@
+{
+  "comfy": "http://127.0.0.1:8188",
+  "timeout": 1800,
+  "requestTimeout": 30,
+  "models": {
+    "unet": "flux1-schnell.safetensors",
+    "clip": "clip_l.safetensors",
+    "t5": "t5xxl_fp8_e4m3fn_scaled.safetensors",
+    "vae": "ae.safetensors",
+    "weightDtype": "default"
+  }
+}

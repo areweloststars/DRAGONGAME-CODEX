@@ -1,0 +1,10 @@
+[
+  "package.json", "index.cjs", "core.js", "pipeline.cjs", "io.cjs", "comfy.cjs",
+  "generate.cjs", "create-demo-package.cjs", "config.example.json",
+  "README.md", "CLAUDE.md", "docs/CONTRACT.md", "docs/ADAPTER.md",
+  "examples/dragon-mist.voca-plan.json", "examples/custom-provider.cjs",
+  "scripts/export.cjs", "export-manifest.json", ".gitignore", ".gitattributes",
+  ".github/workflows/engine-check.yml",
+  "test/helpers.cjs", "test/core.test.cjs", "test/pipeline.test.cjs",
+  "test/comfy.test.cjs", "test/portable.test.cjs"
+]

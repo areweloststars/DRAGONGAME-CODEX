@@ -1,0 +1,16 @@
+{
+  "name": "voca-story-image-engine",
+  "version": "0.1.0",
+  "private": true,
+  "license": "UNLICENSED",
+  "description": "Portable story illustration plans, local ComfyUI adapter and validated game asset packages",
+  "type": "commonjs",
+  "main": "index.cjs",
+  "exports": { ".": "./index.cjs", "./core": "./core.js", "./comfy": "./comfy.cjs" },
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "test": "node --test test/*.test.cjs",
+    "demo:plan": "node generate.cjs examples/dragon-mist.voca-plan.json --dry-run --out artifacts/dragon.dry-run.json --overwrite",
+    "export": "node scripts/export.cjs"
+  }
+}

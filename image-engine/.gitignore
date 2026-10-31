@@ -1,0 +1,17 @@
+node_modules/
+.cache/
+artifacts/
+output/
+*.voca-art.json
+*.dry-run.json
+*.tmp
+*.log
+.env
+.env.*
+!.env.example
+*.safetensors
+*.onnx
+*.pt
+*.pth
+.DS_Store
+Thumbs.db

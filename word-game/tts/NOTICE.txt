@@ -1,0 +1,17 @@
+이 앱이 기기 안에서 쓰는 도구와 데이터 (API·토큰 없음)
+
+목소리
+- en-joe.*.wasm: Piper en_US-joe-medium 음성(int8, npm vowel-lab-voices-int8), CC0-1.0. 영어 발음용이며, 기기에 영어 목소리가 없을 때만 받아서 써요.
+- espeak-ng.js / espeak-ng-gz.wasm: eSpeak NG (npm espeak-ng 1.0.2), GPL-3.0 — LICENSE.txt 참고. 글자를 발음기호로 바꾸고, 기기 목소리가 없을 때 목소리를 만드는 데 씀.
+  소스 코드: https://github.com/espeak-ng/espeak-ng
+- ort.wasm.min.js / ort-wasm-simd-threaded.*: ONNX Runtime Web 1.20.1, MIT License.
+- 한국어 문장은 기기(브라우저·운영체제) 목소리로 읽고, 없으면 eSpeak NG로 읽어요. 비상업 라이선스였던 한국어 신경망 목소리(KSS)는 뺐어요.
+
+글자 인식 (../ocr)
+- Tesseract.js 5.1.1 (Apache-2.0), tesseract.js-core 5.1.1 (Apache-2.0), 한국어·영어 학습 데이터 tessdata 4.0.0_best_int (Apache-2.0).
+  worker.min.js는 언어 데이터를 직접 넘길 때 생기는 버그 한 곳을 고쳤어요(t.data → t.code).
+- words-en.txt: SCOWL 영어 단어 목록(크기 70까지) — words-en-COPYRIGHT.txt 참고.
+- ko-lex.txt: 한국어 낱말 목록. hunspell-ko(npm dictionary-ko 2.0.0, GPL-2.0/LGPL-2.1/MPL-1.1)의 어간과 kengdic(MPL 2.0/LGPL)의 한국어 표제어를 모은 것. 읽은 뜻이 진짜 낱말인지 확인하는 데만 씀.
+
+기본 단어장
+- 기본 단어장(창작 데모 · 동화 7편)의 단어 선택·뜻·예문·이야기·그림은 이 앱에서 새로 만든 것이에요. 교재 내용은 들어 있지 않아요.
